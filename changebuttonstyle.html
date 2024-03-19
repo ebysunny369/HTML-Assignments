@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .style-1 {
+            position: relative;
+            padding: 0.1em 1em;
+            background: linear-gradient(135deg, rgba(255,0,0,.2), rgba(0,0,255,.2));
+            border: none;
+            border-radius: 10px;
+            font-size: 2em;
+            color: white;
+            text-shadow: 1px 2px 2px rgba(255,0,255,.2);
+            cursor: pointer;
+            text-align: center;
+            font-family: 'Bungee', cursive;
+            transition: all .2s linear;
+          }
+          
+          .style-1:hover {
+            text-shadow: 2px 3px 4px rgba(0,0,255,.2);
+            padding: 0.2em 1em;
+          }
+          
+          
+          .style-2 {
+            padding: 1.2em;
+            background-color: white;
+            border: 5px solid black;
+            box-shadow: 10px 5px yellow;
+            cursor: pointer;
+            font-family: 'Plaster', cursive;
+            color: rgba(0,0,0,.75);
+            transition: all .2s linear;
+          }
+          
+          .style-2:hover {
+            color: black;
+            padding: 1em;
+            box-shadow: 10px 5px rgba(170, 255, 0,1);
+          }
+          
+          .style-3 {
+            padding: 1em 0.2em 0em 1em;
+            border: 0;
+            background: white;
+            font-size: 2em;
+            border-radius: 10px;
+            box-shadow: 10px 10px rgba(255, 0, 144, 1);
+            transition: all .1s linear;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            cursor: pointer;
+          }
+          
+          .style-3:hover {
+            box-shadow: 5px 5px rgb(0, 255, 255);
+          }
+          
+          
+          
+          
+          
+          /*
+          font-family: 'Bungee', cursive;
+          font-family: 'Rye', cursive;
+          font-family: 'Vast Shadow', cursive;
+          font-family: 'Plaster', cursive;
+          font-family: 'Staatliches', cursive;
+          font-family: 'Lato', sans-serif;
+          font-family: 'Oswald', sans-serif;
+          font-family: 'Playfair Display', serif;
+          font-family: 'Anton', sans-serif;
+          */
+          
+          html, body {
+            margin: 0;
+          }
+          
+          .grid-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            justify-content: space-around;
+            align-items: center;
+          }
+          
+          .grid-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            height: 100%;
+          }
+          </style>
+
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item">
+              <button class="style-1">Style 1</button>
+            </div>
+            <div class="grid-item">
+              <button class="style-2">Style 2</button>
+            </div>
+            <div class="grid-item">
+              <button class="style-3">Style 3</button>
+            </div>
+          </div>
+
+    </body>
+</html>
